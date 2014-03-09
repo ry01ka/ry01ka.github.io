@@ -1,0 +1,675 @@
+.clearfix:before,
+.clearfix:after
+{
+    display: 'table';
+
+    content: '';
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+html
+{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Noticia Text', 'Varela Round', sans-serif;
+
+    width: 90%;
+    margin: 0 auto;
+
+    color: #333;
+}
+
+h1, h2, h3, ul, li, a, img, form, input, p, div, header, nav, section, article
+{
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+ul
+{
+    padding-left: 0;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+
+button, input, textarea
+{
+    outline: none;
+}
+
+img
+{
+    vertical-align: middle;
+}
+
+.page-header
+{
+    float: left;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+}
+
+.header-banner
+{
+    float: left;
+
+    width: 100%;
+
+    background-color: white;
+}
+
+h1.header-logo-image
+{
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+h1.header-logo-image a img
+{
+    display: block;
+
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.header-nav-main
+{
+    display: block;
+    float: left;
+
+    width: 100%;
+    margin: 1em 0;
+    padding: 0;
+
+    background-color: white;
+}
+.header-nav-main ul li
+{
+    text-align: center;
+    letter-spacing: .1em;
+}
+.header-nav-main ul li a
+{
+    display: block;
+
+    padding: -webkit-calc(.5em + 1px) 0;
+    padding:         calc(.5em + 1px) 0;
+
+    color: #2c3e50;
+    border-bottom: 1px dashed #16a085;
+}
+.header-nav-main ul li a:hover, .header-nav-main ul li a:active
+{
+    color: #16a085;
+}
+.header-nav-main ul li a.current, .header-nav-main ul li a.current:hover
+{
+    cursor: default;
+
+    color: #34495e;
+    border-bottom: 2px solid #16a085;
+}
+
+form.searchBox
+{
+    display: block;
+    float: right;
+
+    width: 100%;
+    height: 60px;
+    margin-top: 2em;
+}
+form.searchBox p
+{
+    line-height: 60px;
+
+    display: inline-block;
+    float: left;
+}
+form.searchBox p.input
+{
+    float: left;
+
+    width: 80%;
+}
+form.searchBox p.submit
+{
+    float: right;
+
+    width: 20%;
+}
+form.searchBox input
+{
+    float: left;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+
+    border: 2px solid #16a085;
+}
+form.searchBox input.searchBox-input
+{
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form.searchBox input.searchBox-button
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #16a085;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    .header-banner
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-banner .header-logo
+    {
+        float: left;
+
+        width: 30%;
+    }
+    .header-banner img
+    {
+        float: left;
+
+        height: 210px;
+        margin-left: 2em;
+    }
+
+    .header-nav-main
+    {
+        position: relative;
+
+        display: block;
+        float: right;
+
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+        width: 70%;
+        margin: 0;
+        padding: 3em 1em;
+    }
+    .header-nav-main ul li
+    {
+        display: block;
+        float: left;
+
+        width: 47%;
+        margin-right: 1em;
+    }
+    .header-nav-main ul li:nth-child(2n)
+    {
+        margin-right: 0;
+    }
+
+    form.searchBox
+    {
+        width: 70%;
+    }
+    form.searchBox p.input
+    {
+        width: 80%;
+    }
+    form.searchBox p.submit
+    {
+        width: 20%;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    .page-header
+    {
+        width: 30%;
+    }
+
+    h1.header-logo-image a img
+    {
+        height: 200px;
+    }
+}
+.page-main
+{
+    float: right;
+
+    margin: .5em 0;
+    padding: 3em 0 0 0;
+
+    background-color: white;
+}
+
+.profile-title
+{
+    text-align: center;
+
+    border-bottom: 2px dashed #16a085;
+    background-color: white;
+}
+
+.profile-image-wrapper
+{
+    margin: 3em 0;
+}
+
+.profile-image
+{
+    text-align: center;
+}
+
+.profile-name
+{
+    margin-bottom: 2em;
+
+    text-align: center;
+}
+
+.profile-description
+{
+    margin-bottom: 2em;
+    padding: 1em;
+
+    border-radius: 5px 5px 5px;
+    background-color: rgba(46, 204, 113, .05);
+}
+
+.profile-mySkills
+{
+    padding: 2em 0;
+
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 5px 5px 5px;
+    box-shadow: 2px 2px 2px rgba(51, 51, 51, .5);
+}
+.profile-mySkills p
+{
+    font-size: 18px;
+
+    margin-bottom: 1em;
+
+    text-decoration: underline;
+}
+.profile-mySkills .profile-skill
+{
+    font-style: italic;
+
+    display: inline-block;
+
+    margin-right: 1em;
+
+    list-style: circle;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    .profile-name
+    {
+        font-size: 2em;
+    }
+
+    .socialMedia ul li
+    {
+        display: block;
+        float: left;
+
+        width: 25%;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    .page-main
+    {
+        float: right;
+
+        width: 65%;
+        margin: 0 auto;
+        padding: 3em 0 0 0;
+    }
+
+    .profile-title
+    {
+        margin-bottom: 3em;
+
+        text-align: center;
+    }
+
+    .profile-image-wrapper
+    {
+        float: left;
+
+        width: 35%;
+        margin-left: 1em;
+    }
+
+    .profile-image
+    {
+        margin-top: -5em;
+
+        text-align: center;
+    }
+
+    .profile-name
+    {
+        font-size: 3em;
+
+        float: left;
+
+        width: 60%;
+    }
+
+    .profile-description-wrapper
+    {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .profile-description-wrapper .profile-description
+    {
+        float: left;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .profile-mySkills
+    {
+        float: left;
+
+        width: 100%;
+    }
+}
+.page-footer
+{
+    float: left;
+
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+
+    background-color: white;
+}
+
+.socialMedia
+{
+    float: left;
+
+    width: 100%;
+    margin-bottom: 3em;
+
+    background-color: white;
+}
+.socialMedia h3
+{
+    font-weight: normal;
+    line-height: 2em;
+
+    height: 2em;
+
+    text-align: center;
+
+    border-bottom: 2px dashed #16a085;
+}
+.socialMedia ul
+{
+    margin: 1em 0;
+}
+.socialMedia ul li
+{
+    text-align: left;
+}
+.socialMedia ul i
+{
+    display: inline-block;
+
+    width: 15%;
+}
+.socialMedia ul .sns-margin
+{
+    display: inline-block;
+
+    width: 30%;
+}
+.socialMedia ul .sns-margin-2
+{
+    display: inline-block;
+}
+.socialMedia a
+{
+    display: block;
+
+    margin-top: 5px;
+    padding: .5em 0;
+
+    color: #2c3e50;
+    border-bottom: 1px dashed #16a085;
+}
+.socialMedia a:hover, .socialMedia a:active
+{
+    color: #16a085;
+}
+
+.contactForm
+{
+    width: 100%;
+}
+.contactForm button
+{
+    font-size: 18px;
+    line-height: 2em;
+
+    display: block;
+    float: left;
+
+    width: 100%;
+    height: 2em;
+    padding-left: 1em;
+
+    text-align: center;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px;
+    background-color: #16a085;
+}
+.contactForm .form
+{
+    display: block;
+    float: left;
+
+    width: 90%;
+    margin: 0 5%;
+
+    border: 2px solid #16a085;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.contactForm form.form p input,
+  .contactForm form.form p textarea#comment,
+  .contactForm #submit-button
+{
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+
+    border: none;
+    border-bottom: 1px solid #16a085;
+}
+.contactForm #submit-button
+{
+    border-bottom: none;
+    background-color: #16a085;
+}
+.contactForm #comment
+{
+    height: 150px;
+
+    resize: vertical;
+}
+.contactForm #submit-button
+{
+    color: #fff;
+}
+
+.back-to-top-btn
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 3em;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 5px;
+    background-color: #16a085;
+}
+.back-to-top-btn a
+{
+    color: #fff;
+}
+
+.copyright
+{
+    font-size: 11px;
+
+    display: block;
+
+    height: 40px;
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: white;
+}
+.copyright span a
+{
+    text-decoration: none;
+}
+.copyright a
+{
+    text-decoration: underline;
+}
+.copyright b
+{
+    font-weight: normal;
+}
+.copyright .author
+{
+    font-size: 12px;
+}
+
+/******* javascript ***********/
+.js-hidden
+{
+    position: relative;
+    top: 0;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    .socialMedia
+    {
+        float: left;
+
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .socialMedia ul
+    {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .socialMedia ul li
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    .contactForm
+    {
+        float: right;
+
+        width: 45%;
+        margin-right: 5%;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    .page-footer
+    {
+        margin-top: 7em;
+    }
+
+    .socialMedia
+    {
+        float: left;
+
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .socialMedia ul
+    {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .socialMedia ul li
+    {
+        display: block;
+    }
+
+    .contactForm
+    {
+        float: right;
+
+        width: 45%;
+        margin-right: 5%;
+    }
+}
